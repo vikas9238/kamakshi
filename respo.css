@@ -137,4 +137,39 @@
         font-size: .8rem;
     }
 
+
+    /* contact us respo */
+
+    .contactus-section{
+
+        padding-block: 3rem;
+    }
+
+    .contactus-section-details h2{
+        font-size: 2rem;
+    }
+
+    .info-details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-detail-sec{
+        width: 100%
+    }
+    .contact-info-row-02-img{
+        display: none;
+    }
+    .contact-info-row-02-info{
+        width: 100%;
+    }
+    .contact-info-row-02-info-h4{
+        text-align: center;
+    }
+    .contact-info-row-02-info-p{
+        text-align: center;
+    }
+    .center-btn{
+        justify-content: center;
+    }
+
 }
