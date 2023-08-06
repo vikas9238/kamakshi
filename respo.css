@@ -44,6 +44,15 @@
 
     /* nav ended */
 
+    .top-main-section {
+        padding-block: 25px;
+    }
+    .top-main-section h1, h2 {
+        font-size: 1.5rem;
+    }
+    .top-main-section h1, h2 {
+        padding-bottom: 0.3rem;
+    }
     /* feature sec */
     .feature-section-info {
         flex-direction: column;
@@ -73,11 +82,13 @@
     }
 
     .header-section {
-        margin-block: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
         gap: 15px;
     }
 
     .header-left-p {
+        text-align: left;
         padding-top: 8px;
         padding-bottom: 15px;
     }
@@ -142,11 +153,15 @@
 
     .contactus-section{
 
-        padding-block: 3rem;
+        padding-block: 2rem;
     }
 
     .contactus-section-details h2{
-        font-size: 2rem;
+        font-size: 1.3rem;
+    }
+    .contactus-section-details p{
+        padding-top: 0rem;
+        font-size: 0.8rem;
     }
 
     .info-details{
@@ -170,6 +185,69 @@
     }
     .center-btn{
         justify-content: center;
+    }
+
+    /* gallery section */
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery img{
+        width: 100%;
+    }
+
+    /* ashram section */
+    .ashram-section{
+        padding-block: 3rem;
+    }
+
+    .world-content img{
+        display: none;
+    }
+    .world-content-detail{
+        width: 100%;
+    }
+    .ashram-hero-sec{
+        padding-block: 1.5rem;
+    }
+    .ashram-section {
+        padding-block: 2rem;
+    }
+    
+    /* about section */
+    .who-we-are-info{
+        flex-direction: column-reverse;
+    }
+    .who-we-are-p1{
+        text-align: center;
+    }
+    .who-we-are-info img{
+        width: 100%;
+    }
+
+    .ashram-h3{
+        width: 100%;
+        
+    }
+    .ashram-h1{
+        width: 100%;
+        
+    }
+    .ashram-p{
+        width: 100%;
+        
+    }
+    .better-world-info-h2{
+        padding-block: .7rem;
+        font-size: 2rem;
+    }
+    
+    .better-world {
+        padding-block: 0rem;
+    }
+    .better-world-info-p {
+        text-align: left;
+        font-size: 1.1rem;
+        padding: 1rem 0rem 4rem 0rem;
     }
 
 }
