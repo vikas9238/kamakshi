@@ -1,0 +1,253 @@
+@media screen and (max-width : 479px) {
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .header{
+        background-color: #ff003a;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.8rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* nav ended */
+
+    .top-main-section {
+        padding-block: 25px;
+    }
+    .top-main-section h1, h2 {
+        font-size: 1.5rem;
+    }
+    .top-main-section h1, h2 {
+        padding-bottom: 0.3rem;
+    }
+    /* feature sec */
+    .feature-section-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-section-info-1 {
+        width: 100%;
+    }
+
+    .section-reverse {
+        padding-block: 30px;
+    }
+
+    /* header-sec */
+    .header-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-right img {
+        width: 100%;
+    }
+
+    .header-left {
+        font-size: 1.2rem;
+    }
+
+    .header-section {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        gap: 15px;
+    }
+
+    .header-left-p {
+        text-align: left;
+        padding-top: 8px;
+        padding-bottom: 15px;
+    }
+
+
+    /* card respo */
+
+    .card {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-info {
+        width: 100%;
+    }
+
+    /* ............. */
+
+    .involved-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .involved-info-sec1 {
+        width: 100%;
+    }
+
+    /* ............ */
+
+    .last-info {
+        padding-bottom: 50px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .last-info-sec1 {
+        width: 100%;
+    }
+
+
+
+    /* footer respo */
+    .footer-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .header-direction {
+        flex-direction: column-reverse;
+    }
+
+    .footer-content-col-1 {
+        width: auto;
+    }
+
+    .footer-content-col-1 {
+        font-size: .8rem;
+    }
+
+
+    /* contact us respo */
+
+    .contactus-section{
+
+        padding-block: 2rem;
+    }
+
+    .contactus-section-details h2{
+        font-size: 1.3rem;
+    }
+    .contactus-section-details p{
+        padding-top: 0rem;
+        font-size: 0.8rem;
+    }
+
+    .info-details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-detail-sec{
+        width: 100%
+    }
+    .contact-info-row-02-img{
+        display: none;
+    }
+    .contact-info-row-02-info{
+        width: 100%;
+    }
+    .contact-info-row-02-info-h4{
+        text-align: center;
+    }
+    .contact-info-row-02-info-p{
+        text-align: center;
+    }
+    .center-btn{
+        justify-content: center;
+    }
+
+    /* gallery section */
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery img{
+        width: 100%;
+    }
+
+    /* ashram section */
+    .ashram-section{
+        padding-block: 3rem;
+    }
+
+    .world-content img{
+        display: none;
+    }
+    .world-content-detail{
+        width: 100%;
+    }
+    .ashram-hero-sec{
+        padding-block: 1.5rem;
+    }
+    .ashram-section {
+        padding-block: 2rem;
+    }
+    
+    /* about section */
+    .who-we-are-info{
+        flex-direction: column-reverse;
+    }
+    .who-we-are-p1{
+        text-align: center;
+    }
+    .who-we-are-info img{
+        width: 100%;
+    }
+
+    .ashram-h3{
+        width: 100%;
+        
+    }
+    .ashram-h1{
+        width: 100%;
+        
+    }
+    .ashram-p{
+        width: 100%;
+        
+    }
+    .better-world-info-h2{
+        padding-block: .7rem;
+        font-size: 2rem;
+    }
+    
+    .better-world {
+        padding-block: 0rem;
+    }
+    .better-world-info-p {
+        text-align: left;
+        font-size: 1.1rem;
+        padding: 1rem 0rem 4rem 0rem;
+    }
+
+}
