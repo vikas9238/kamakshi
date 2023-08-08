@@ -852,3 +852,15 @@ padding: 1rem 3rem 4rem 3rem;
     text-align: left;
     color: rgb(0, 0, 0);
 }
+
+
+/* loader */
+
+#preloader{
+    background:#000  url(image/preloader.gif) no-repeat center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
