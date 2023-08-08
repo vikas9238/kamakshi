@@ -163,7 +163,7 @@
     }
 
     .footer-content-col-1 {
-        width: auto;
+        width: 100%;
     }
 
     .footer-content-col-1 {
@@ -282,5 +282,25 @@
 .donation-details-act {
     padding: 40px;
 }
+
+.donation-details-act {
+    margin: 22px 0px;
+}
+.donation-act {
+    background-color: #ff003a;
+    padding: 2rem;
+}
+
+
+
+/* gaushala  */
+.gaushala-banner{
+    padding-block: 3rem;
+}
+.gaushala-section {
+    padding-block: 20px;
+}
+
+
 
 }

@@ -119,7 +119,7 @@ header{
 }
 
 .nav-item {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 .nav-link{
@@ -213,8 +213,7 @@ header{
     color: #577592;
     padding-top: 15px;
     padding-bottom: 30px;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
 }
 
 .company-header{
@@ -271,14 +270,16 @@ header{
     text-align: center;
   }
   .card-container h4{
-    padding: 15px 0px 15px 10px;
+    padding: 10px 0px 15px 10px;
     font-size: 1rem;
+    text-align: left;
   }
   .card-container p{
-    padding: 15px 0px 15px 10px;
+    padding: 10px 0px 15px 10px;
     font-size: .8rem;
     color: rgba(0, 0, 0, 0.454);
     font-weight: bold;
+    text-align: left;
   }
 
 
@@ -382,8 +383,7 @@ header{
 .footer-content-col-1 p{
    padding-block: 1rem;
    color: white;
-   text-align: justify;
-    text-justify: inter-word;
+   text-align: left;
    font-size: 1rem;
    line-height: 1.5rem;
 
@@ -613,8 +613,10 @@ form{
     font-size: 1rem;
     text-align: left;
     line-height: 1.5rem;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
+  }
+  .donation-img img{
+    width: 400px;
   }
 
 
@@ -648,9 +650,10 @@ form{
 .ashram-p{
     width: 50%;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: bold;
     padding-bottom: 2rem;
     word-spacing: .2rem;
+    text-align: left;
 }
 .better-world{
     padding-block: 3rem;
@@ -823,16 +826,15 @@ padding: 1rem 3rem 4rem 3rem;
 .women-power p{
     font-size: 1rem;
     line-height: 1.5rem;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     color: white;
     padding-top: 20px;
 } 
 
-.text-center{
+/* .text-center{
     text-align: justify;
     text-justify: inter-word;
-}
+} */
 
 
 /* kamdhenu gaushala session */
@@ -847,7 +849,6 @@ padding: 1rem 3rem 4rem 3rem;
     padding-top: 20px;
     font-size: 1rem;
     line-height: 1.5rem;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     color: rgb(0, 0, 0);
 }
