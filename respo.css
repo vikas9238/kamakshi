@@ -64,7 +64,7 @@
     }
 
     .feature-section-info-1 {
-        width: 30%;
+        width: 40%;
         padding: 10px;
     }
 
@@ -276,6 +276,11 @@
     
 .women-banner {
     padding-block: 3rem;
+}
+
+/* donation */
+.donation-details-act {
+    padding: 40px;
 }
 
 }

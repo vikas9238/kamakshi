@@ -171,7 +171,7 @@ header{
     border-radius: 50%;
 }
 .feature-section-info{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .feature-section-info-1{
     padding: 1.5rem;
@@ -601,14 +601,15 @@ form{
     color: #ff003a;
   }
   .donation-details-act{
-    padding: 50px;
+    margin: 40px 140px;
+    
   }
   .donation-act{
-    background-color: #ae96966f;
+    background-color: #ff003a;
     padding: 4rem;
   }
   .donation-act p{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     text-align: left;
     line-height: 1.5rem;
