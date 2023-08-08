@@ -600,6 +600,22 @@ form{
     font-weight: bold;
     color: #ff003a;
   }
+  .donation-details-act{
+    padding: 50px;
+  }
+  .donation-act{
+    background-color: #ae96966f;
+    padding: 4rem;
+  }
+  .donation-act p{
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
 
   /* Anath Ashram section */
 
