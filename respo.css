@@ -305,6 +305,11 @@
     padding-block: 20px;
 }
 
+/* preloader */
+#preloader{
+    background-size: 70%;
+}
+
 
 
 }
