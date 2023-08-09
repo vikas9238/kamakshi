@@ -5,6 +5,17 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
+
+/* loader */
+
+#preloader{
+    background:#ffffff  url(image/preloader-adv.gif) no-repeat center;
+    background-size: 35%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -853,14 +864,3 @@ padding: 1rem 3rem 4rem 3rem;
     color: rgb(0, 0, 0);
 }
 
-
-/* loader */
-
-#preloader{
-    background:#ffffff  url(image/preloader-adv.gif) no-repeat center;
-    background-size: 35%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
