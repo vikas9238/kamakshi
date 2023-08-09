@@ -309,7 +309,7 @@ header{
 }
 
 .involved-info{
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
   .involved-info-sec1{
