@@ -857,11 +857,10 @@ padding: 1rem 3rem 4rem 3rem;
 /* loader */
 
 #preloader{
-    background:#00000029  url(image/preloader.gif) no-repeat center;
+    background:#ffffff  url(image/preloader-adv.gif) no-repeat center;
     background-size: 35%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
-    mix-blend-mode: color-burn;
 }
