@@ -16,6 +16,7 @@
     position: fixed;
     z-index: 100;
 }
+
 .flex{
     display: flex;
     align-items: center;
@@ -127,8 +128,7 @@ header{
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 25px;
-}
-
+}   
 .nav-item {
     margin-left: 1.5rem;
 }
@@ -863,4 +863,20 @@ padding: 1rem 3rem 4rem 3rem;
     text-align: left;
     color: rgb(0, 0, 0);
 }
+/* volunteer page */
 
+.styleing-p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    color: #577592;
+}
+.styleing-p1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    color: #ff003a;
+}
+.volunteer-button{
+    margin-block: 3rem;
+}
