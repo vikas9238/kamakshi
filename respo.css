@@ -294,6 +294,33 @@
     background-color: #ff003a;
     padding: 2rem;
 }
+.membership-sec1{
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .membership-sec1-pad{
+    padding-top: 0px;
+  }
+  .membership-info{
+    flex-direction: column;
+  }
+  .membership p{
+    font-size: 1.5rem;
+  }
+  .membership-sec1 h1{
+    font-size: 1.2rem;
+  }
+  .donation-card-sec{
+    flex-direction: column;
+  }
+  .donation-card-sec1{
+    width: 100%;
+  }
+  .donation-card-sec1 a{
+    padding: 7px 12px;
+    font-size: .5rem;
+
+  }
 
 
 
@@ -309,6 +336,8 @@
 #preloader{
     background-size: 70%;
 }
+
+
 
 
 

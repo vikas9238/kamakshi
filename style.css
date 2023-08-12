@@ -630,6 +630,79 @@ form{
     width: 400px;
   }
 
+  .membership{
+    padding-block: 2rem;
+  }
+  .membership p{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .membership-info{
+    justify-content: space-between;
+    text-align: left;
+  }
+  .membership-sec1{
+    padding-block: 2rem;
+    width: 50%;
+  }
+  .membership-sec1 h1{
+    color: #ff003a;
+    font-size: 2.2rem;
+  }
+  .membership-sec1 p{
+    font-size: 2.2rem;
+    text-align: left;
+  }
+
+  .membership-sec1 li{
+    padding-top: 2rem;
+    font-size: 14px;
+  }
+  .membership-sec1 li i{
+    color: #ff003a;
+  }
+  .donation-card{
+    padding-block: 3rem;
+  }
+  .donation-card-sec{
+    justify-content: space-between;
+  }
+  .donation-card-sec1{
+    width: 45%;
+    padding: 2rem;  
+    text-align: center; 
+    border: 1px solid rgba(0, 0, 0, 0.37); 
+    transition: all .4s ease-in-out;
+    margin: 10px;
+  }
+  .donation-card-sec1:hover{
+    box-shadow: 0px 0px 6px black;
+  }
+  .donation-card-sec1 p{
+    font-size: 1.5rem;
+    
+  }
+  .donation-card-sec1 h2{
+    font-size: 1.4rem;
+    color: #ff003a;
+    padding-block: 1rem;
+  }
+  .donation-card-sec1 a{
+    padding: 8px 20px;
+    background-color: #ff003a;
+    color: white;
+    border-radius: 40px;    
+    font-size: .8rem;
+    font-weight: bold;
+    transition: all .4 ease-in-out;
+  }
+  .donation-card-sec1 a:hover{
+    background-color: white;
+    color: #ff003a;
+    border: 2px solid black;
+
+  }
+
 
   /* Anath Ashram section */
 
@@ -731,9 +804,11 @@ padding: 1rem 3rem 4rem 3rem;
     border-radius: 25px;
     margin-block: 10px;
     transition: all .3s;
+    filter: grayscale(1);
 }
 .gallery img:hover{
     box-shadow: 1px 0px 10px #ff003a;
+    filter: grayscale(0);
 
 }
 
