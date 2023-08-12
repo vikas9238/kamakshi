@@ -454,6 +454,9 @@ header{
     width: 23%;
     padding: 15px;
 }
+.info-detail-sec p a{
+    color: black;
+}
 .info-detail-sec i{
     color: #ff003a;
     font-size: 3rem;
