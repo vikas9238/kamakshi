@@ -672,7 +672,7 @@ form{
     padding: 2rem;  
     text-align: center; 
     border: 1px solid rgba(0, 0, 0, 0.37); 
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
     margin: 10px;
   }
   .donation-card-sec1:hover{
@@ -844,7 +844,7 @@ padding: 1rem 3rem 4rem 3rem;
 .boad-info-card img{
     width: 100%;
     aspect-ratio: 1;
-    object-fit: contain;
+    object-fit: fill;
     border-radius: 40px;
 
 }
