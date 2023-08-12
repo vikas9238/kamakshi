@@ -286,13 +286,18 @@
 .donation-details-act {
     padding: 40px;
 }
+.header-width{
+    padding-top: 40x;
+    padding-bottom: 10px;
+  }
 
 .donation-details-act {
-    margin: 22px 0px;
+    margin: 17px 0px;
+    padding: 0px;
 }
 .donation-act {
     background-color: #ff003a;
-    padding: 2rem;
+    padding: 1rem;
 }
 .membership-sec1{
     width: 100%;
@@ -319,9 +324,7 @@
   .donation-card-sec1 a{
     padding: 7px 12px;
     font-size: .5rem;
-
   }
-
 
 
 /* gaushala  */
@@ -336,9 +339,5 @@
 #preloader{
     background-size: 70%;
 }
-
-
-
-
 
 }

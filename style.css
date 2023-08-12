@@ -16,6 +16,13 @@
     position: fixed;
     z-index: 100;
 }
+body::-webkit-scrollbar{
+    background-color: #0000004e;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ff003a;
+    border-radius: 20px;
+}
 
 .flex{
     display: flex;
@@ -47,6 +54,7 @@ u{
     color: #ff003a;
     font-weight: bold;
 }
+
 
 /* tap to scroll */
 
@@ -604,6 +612,12 @@ form{
 
 
   /* Donation sction */
+  .header-width{
+    padding-block: 56px;    
+  }
+  .header-width i{
+    color: #ff003a;
+  }
 
   .donation-section{
     padding-block: 3rem;
@@ -615,12 +629,12 @@ form{
     color: #ff003a;
   }
   .donation-details-act{
-    margin: 40px 140px;
+    margin: 40px 0px;
     
   }
   .donation-act{
     background-color: #ff003a;
-    padding: 4rem;
+    padding: 2rem;
   }
   .donation-act p{
     color: rgb(255, 255, 255);
@@ -638,7 +652,7 @@ form{
   }
   .membership p{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .membership-info{
     justify-content: space-between;
