@@ -821,11 +821,9 @@ padding: 1rem 3rem 4rem 3rem;
     border-radius: 25px;
     margin-block: 10px;
     transition: all .3s;
-    filter: grayscale(1);
 }
 .gallery img:hover{
     box-shadow: 1px 0px 10px #ff003a;
-    filter: grayscale(0);
 
 }
 
