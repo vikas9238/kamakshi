@@ -62,7 +62,7 @@ u{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 10px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -71,7 +71,7 @@ u{
     color: white;
     cursor: pointer;
     padding: 15px 20px;
-    border-radius: 4px;
+    border-radius: 50px;
   }
   
   #myBtn:hover {
