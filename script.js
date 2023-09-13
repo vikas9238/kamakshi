@@ -7,7 +7,21 @@ function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
-
+//contact us
+function sendEmail() {
+  Email.send({
+      SecureToken: "42b6c6c9-bea7-4860-b7c9-0a72dd9db737",
+      To: 'kamakshisevasansthan08@gmail.com',
+      From: "kamakshisevasansthanhelp@gmail.com",
+      Subject: "New Contact Form Enquiry",
+      Body: "Name: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").value
+          + "<br> Subject: " + document.getElementById("subject").value
+          + "<br> Message: " + document.getElementById("message").value
+  }).then(
+      message => alert("Message send Succesfully")
+  );
+}
 
 
 // Get the button
