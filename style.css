@@ -18,10 +18,11 @@
 }
 body::-webkit-scrollbar{
     background-color: #0000004e;
+    width: 10px;
 }
 body::-webkit-scrollbar-thumb{
     background-color: #ff003a;
-    border-radius: 20px;
+    border-radius: 1px;
 }
 
 .flex{
