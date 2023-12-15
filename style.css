@@ -970,7 +970,10 @@ padding: 1rem 3rem 4rem 3rem;
     padding: 3rem 3rem;
     line-height: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #6c6666;
+    color: #585454;
+}
+.gauseva-contact-info p a{
+    color: rgb(76, 69, 69);
 }
 .gauseva-contact-info{
     padding-block: 2rem;
@@ -978,8 +981,13 @@ padding: 1rem 3rem 4rem 3rem;
 }
 .gauseva-contact-info p{
     margin-bottom: 2rem;
+    font-weight: 600;
 }
-
+.gausewa-denation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* volunteer page */
 
