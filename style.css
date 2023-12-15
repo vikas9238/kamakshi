@@ -954,6 +954,33 @@ padding: 1rem 3rem 4rem 3rem;
     text-align: left;
     color: rgb(0, 0, 0);
 }
+.gau-sevatype-header{
+    color: #ff003a;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.gau-sevatype-link{
+    color: #ff003a;
+    font-weight: bold;
+}
+.gau-sevatype-link:hover{
+    border-bottom: 2px solid red;
+}
+.listof-gauseva{
+    padding: 3rem 3rem;
+    line-height: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6c6666;
+}
+.gauseva-contact-info{
+    padding-block: 2rem;
+    text-align: center;
+}
+.gauseva-contact-info p{
+    margin-bottom: 2rem;
+}
+
+
 /* volunteer page */
 
 .styleing-p{
