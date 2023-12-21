@@ -299,12 +299,22 @@
     background-color: #ff003a;
     padding: 1rem;
 }
+
+.membership {
+    padding-block: 1rem;
+}
 .membership-sec1{
     width: 100%;
     padding-bottom: 0px;
   }
+  .membership-sec1 li{
+    padding-top: 1rem;
+  }
   .membership-sec1-pad{
     padding-top: 0px;
+}
+.membership-top-margin{
+      margin-top: -3rem;
   }
   .membership-info{
     flex-direction: column;
