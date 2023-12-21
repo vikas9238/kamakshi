@@ -674,6 +674,9 @@ form{
     font-size: 2.2rem;
     text-align: left;
   }
+  .membership-sec1-margine{
+    margin-top: -1rem;
+  }
 
   .membership-sec1 li{
     padding-top: 2rem;
