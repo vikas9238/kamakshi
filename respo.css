@@ -335,8 +335,12 @@
     padding: 7px 12px;
     font-size: .5rem;
   }
-
-
+  .online-btn{
+    opacity: 1;
+  }
+  .hidden-online-btn{
+    opacity: 0;
+}
 /* gaushala  */
 .gaushala-banner{
     padding-block: 3rem;

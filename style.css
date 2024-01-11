@@ -216,6 +216,7 @@ header{
 .header-right img{
     width: 450px;
     border-radius: 30px;
+    margin-bottom: 2rem;
 }
 .header-left{
     padding-bottom: 20px;
@@ -726,7 +727,12 @@ form{
     border: 2px solid black;
 
   }
-
+  .online-btn{
+    opacity: 0;
+  }
+.hidden-online-btn{
+    opacity: 1;
+}
 
   /* Anath Ashram section */
 
