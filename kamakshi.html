@@ -1,287 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/7222562f05.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Kamakshi Mahila Seva Sansthan</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="respo.css" />
-  </head>
 
-  <body>
-    <div id="preloader"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/7222562f05.js" crossorigin="anonymous"></script>
+  <title>Kamakshi Mahila Seva Sansthan</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="respo.css" />
+  <style>
+    .sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      align-items: center;
+    }
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa-solid fa-angle-up"></i>
-    </button>
+    .sponsor-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      background: #fff;
+      text-align: center;
+      transition: all .3s ease-in-out;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1 / 1;
+      /* force square cards for uniform appearance */
+    }
 
-    <!-- Navigation bar -->
+    .sponsor-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* crop to fill without distortion */
+      border-radius: 8px;
+      display: block;
+    }
 
-    <header class="header">
-      <nav class="navbar container">
-        <div class="navbar-img">
-          <a href=".." class="nav-logo"
-            ><img src="favicon_io/apple-touch-icon.png" alt="" width="80px"
-          /></a>
-        </div>
+    /* Keep other images responsive */
+    /* .container img:not(.sponsor-card img) {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    } */
 
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href=".." class="nav-link">Home</a>
-          </li>
-          <!-- <li class="nav-item">
+    .sponsor-card:hover {
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+
+  <!-- Navigation bar -->
+
+  <header class="header">
+    <nav class="navbar container">
+      <div class="navbar-img">
+        <a href=".." class="nav-logo"><img src="favicon_io/apple-touch-icon.png" alt="" width="80px" /></a>
+      </div>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href=".." class="nav-link">Home</a>
+        </li>
+        <!-- <li class="nav-item">
                     <a href="ashram" class="nav-link">Anath Ashram (Opening Shortly)</a>
                 </li> -->
-          <li class="nav-item">
-            <a href="kamakshi" class="nav-link">Mahila Sansthan</a>
-          </li>
-          <li class="nav-item">
-            <a href="gaushala" class="nav-link">Gaushala</a>
-          </li>
-          <li class="nav-item">
-            <a href="about" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact" class="nav-link">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a href="gallery" class="nav-link">Gallery</a>
-          </li>
+        <li class="nav-item">
+          <a href="kamakshi" class="nav-link">Mahila Sansthan</a>
+        </li>
+        <li class="nav-item">
+          <a href="gaushala" class="nav-link">Gaushala</a>
+        </li>
+        <li class="nav-item">
+          <a href="about" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact" class="nav-link">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a href="gallery" class="nav-link">Gallery</a>
+        </li>
 
-          <li><a href="donation" class="links primary-button">Donation</a></li>
+        <li><a href="donation" class="links primary-button">Donation</a></li>
+      </ul>
+
+      <div style="margin-right: -100px">
+        <a href="tel:8619311686"><i class="fa-solid fa-phone"></i></a>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Section ......STARTED...... -->
+  <section class="women-banner">
+    <div class="contactus-section-details container">
+      <h2>Terracotta Pottery Initiative</h2>
+      <p>
+        <a href="index" class="contact-home"><b>Home</b></a> / Terracotta Pottery
+      </p>
+    </div>
+  </section>
+
+  <section class="welcome-women">
+    <div class="women-power container">
+      <h5>Celebrating the Art of Rajasthan</h5>
+
+      <p>
+        Terracotta pottery is a beautiful traditional art of Jhadol village in
+        Rajasthan. Made from natural clay, every product is crafted with love,
+        patience, and skill. Each piece reflects the culture, warmth, and daily
+        life of rural Rajasthan.
+      </p>
+
+      <p>
+        Our NGO supports and trains rural women to create these handmade
+        terracotta products. This gives them confidence, income support, and a
+        strong identity. This is not just pottery; it is their pride and
+        strength.
+      </p>
+
+      <p>
+        When you support terracotta art, you support real families, real dreams,
+        and real growth. Together we can keep this heritage alive and help rural
+        women build a better future.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 1 -->
+  <div class="container header-section flex">
+    <div class="header-left">
+      <h1 class="header-left-h1">
+        Rajasthan ki <span style="color: #ff003a">Mitti ki Kahani</span>
+      </h1>
+      <p class="header-left-p text-center">
+        Every terracotta product is handmade using natural clay. No machines, only pure skill.
+        It carries the beauty of village life, Indian culture, and the gentle touch of
+        hardworking women artisans.
+        <br><br>
+        This clay is not just soil, it is a part of their life, their tradition, and their identity.
+        Each piece takes time, patience, and love to create. From shaping the clay to giving it
+        life through beautiful designs, every step is done with care and dedication.
+        <br><br>
+        Terracotta pottery reflects the warmth of Rajasthan — its culture, simplicity, and strong
+        roots. These creations bring a sense of connection to nature and remind us of the art that
+        has lived through generations. By supporting this craft, we are not only celebrating art
+        but also supporting the women who create it with pride and hope for a better future.
+      </p>
+    </div>
+    <div class="header-right">
+      <img src="./image/art.jpeg" alt="" style="
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
+        margin-block: 10px;
+      " />
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="container header-section flex section-reverse">
+    <div class="header-left">
+      <h1 class="header-left-h1">
+        <span style="color: #ff003a">Empowering</span> Rural Women
+      </h1>
+      <p class="header-left-p text-center">
+        Kamakshi Mahila Seva Sansthan trains, guides, and supports rural women so they
+        can become confident and self-reliant. Through terracotta pottery, women learn
+        real skills that help them earn, support their families, and build a secure future.
+        <br><br>
+        This initiative is not just about work, it is about dignity, respect, and identity.
+        Women who once depended on others now stand proudly on their own feet. They gain
+        confidence, financial strength, and recognition in society.
+        <br><br>
+        By empowering rural women, Kamakshi Mahila Seva Sansthan is helping families grow
+        stronger, children get better opportunities, and communities move forward with hope
+        and pride.
+      </p>
+    </div>
+
+    <div class="header-right">
+      <img src="./image/art2.jpeg" alt="" style="
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
+        margin-block: 10px;
+      " />
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="container header-section flex">
+    <div class="header-left">
+      <h1 class="header-left-h1">
+        Terracotta
+        <span style="color: #ff003a; font-weight: bold">Creations</span>
+      </h1>
+      <p class="header-left-p text-center">
+        Simple. Natural. Meaningful. These handmade clay products add beauty to homes
+        and carry the soul of Rajasthan. By supporting this art, you are helping
+        preserve tradition and supporting the hands that create it.
+        <br><br>
+        Each creation is crafted slowly and carefully, shaped with patience, and
+        finished with love. These pieces are not factory-made, they are made by real
+        people, with real emotions, and real devotion. Every curve, every design, and
+        every tiny detail reflects culture, heritage, and pride.
+        <br><br>
+        Terracotta creations bring warmth to homes, connect people to nature, and
+        remind us of the art that has lived for generations. When you choose terracotta,
+        you are not just buying a product — you are becoming part of a story, a
+        tradition, and a movement that uplifts rural women and protects India’s
+        beautiful heritage.
+      </p>
+    </div>
+
+    <div class="header-right">
+      <img src="./image/art3.jpeg" alt="" style="
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
+        margin-block: 10px;
+      " />
+    </div>
+  </div>
+
+  <!-- NEW SECTION: TRAINING PROGRAM -->
+  <div class="container header-section flex section-reverse">
+    <div class="header-left">
+      <h1 class="header-left-h1">
+        Skill <span style="color: #ff003a">Training Program</span>
+      </h1>
+      <p class="header-left-p text-center">
+        We provide hands-on training to village women, helping them learn step-by-step
+        with patience, guidance, and care. From shaping clay to designing beautiful
+        terracotta products, every skill is taught practically so they truly understand
+        and feel confident. This training is not only about learning an art, it is
+        about giving them strength, belief, and independence.
+        <br><br>
+        Through the Skill Training Program, women gain financial support, stability
+        for their families, and a sense of pride in their work. Many women who once
+        had limited opportunities now see a brighter future, earn with dignity, and
+        stand proudly on their own feet. This program helps them grow, support their
+        families, and build a better life with respect and confidence.
+      </p>
+    </div>
+
+    <div class="header-right">
+      <img src="./image/art4.jpeg" alt="" style="
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
+        margin-block: 10px;
+      " />
+    </div>
+  </div>
+
+  <!-- NEW SECTION: IMPACT -->
+  <div class="container header-section flex">
+    <div class="header-left">
+      <h1 class="header-left-h1">
+        Our <span style="color: #ff003a">Impact</span>
+      </h1>
+      <p class="header-left-p text-center">
+        Through this initiative, many rural women have been trained and given the
+        opportunity to learn valuable skills. These women are now able to support
+        their families financially and live with more stability and dignity.
+        Traditional terracotta art, which was slowly fading away, is getting a new
+        life and respect through their work.
+        <br><br>
+        Along with earning, women are gaining confidence, recognition, and emotional
+        strength. They feel proud of what they create and proud of the change they are
+        bringing to their homes and communities.
+      </p>
+
+      <p class="header-left-p text-center">
+        • Many rural women trained <br>
+        • Families getting financial support <br>
+        • Traditional art getting new life <br>
+        • Strong social and emotional confidence
+      </p>
+    </div>
+
+    <div class="header-right">
+      <img src="./image/art5.jpeg" alt="" style="
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
+        margin-block: 10px;
+      " />
+    </div>
+  </div>
+
+  <!-- work showcase -->
+  <section style="padding:50px 0;">
+    <div class="container">
+      <h2 style="text-align:center; color:#ff003a; margin-bottom:10px;">
+        Work Showcase
+      </h2>
+      <p style="text-align:center; color:#555; margin-bottom:30px;">
+        A glimpse of our terracotta craftsmanship
+      </p>
+
+      <div class="sponsor-grid">
+        <div class="sponsor-card">
+          <img src="./image/show.jpeg" alt="">
+        </div>
+
+        <div class="sponsor-card">
+          <img src="./image/show2.jpeg" alt="">
+        </div>
+
+        <div class="sponsor-card">
+          <img src="./image/show3.jpeg" alt="">
+        </div>
+
+        <div class="sponsor-card">
+          <img src="./image/show4.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- work showcase end -->
+  <!-- CTA -->
+  <section style="padding: 50px 0">
+    <div class="container" style="text-align: center">
+      <h2 style="color: #ff003a">Support • Empower • Preserve Heritage</h2>
+      <p style="margin-top: 10px; color: #555">
+        Together we can make a real difference.
+      </p>
+      <a href="https://rzp.io/l/kamakshi-donation" class="links primary-button" style="margin-top: 20px">
+        Support / Donate
+      </a>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+
+  <footer class="footer-section">
+    <div class="container flex footer-content" style="align-items: flex-start">
+      <div class="footer-content-col-1">
+        <h3>CONTACT INFO</h3>
+
+        <p>
+          <i class="fa-solid fa-house"></i> &nbsp;&nbsp; KAMAKSHI MAHILA SEVA
+          SANSTHAN <br /><br />
+          FLAT NO. 302, AAKASH GANGA COMPLEX, SAVINA, 100 FEET LINK ROAD,
+          313001, UDAIPUR, RAJASTHAN.
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"> </i>&nbsp;&nbsp;
+          <a href="tel:8619311686">+91 8619311686</a> ,
+          <a href="tel:9660796049">+91 9660796049</a>
+          <a href="tel:8619621343">+91 8619621343</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-message"></i> &nbsp;&nbsp;<a
+            href="mailto:kamakshisevasansthan08@gmail.com">kamakshisevasansthan08@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-content-col-2">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="..">Home</a></li>
+          <li><a href="ashram">Anath Ashram (Opening Shortly)</a></li>
+          <li><a href="about">About us</a></li>
+          <li><a href="contact">Contact us</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="contact">Feedback</a></li>
         </ul>
-
-        <div style="margin-right: -100px">
-          <a href="tel:8619311686"><i class="fa-solid fa-phone"></i></a>
-        </div>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Contact Section ......STARTED...... -->
-
-    <section class="women-banner">
-      <div class="contactus-section-details container">
-        <h2>Kamakshi Mahila Seva Sansthan</h2>
-        <p>
-          <a href="index" class="contact-home"><b>Home</b></a> / Kamakshi Mahila
-          Seva Sansthan
-        </p>
       </div>
-    </section>
-
-    <section class="welcome-women">
-      <div class="women-power container">
-        <h5>Welcome to Kamakshi Mahila Seva Sansthan</h5>
-
-        <p>
-          Women are the backbone of families and the society. They provide care,
-          support and nurture their families and are essential for the mental
-          emotional as well as physical development of children. Women also play
-          a significant role in community building and often take on leadership
-          roles in community organizations.
-        </p>
-        <p>
-          Gender discrimination is a pervasive issue that affect women in all
-          areas of their lives. Women often face discrimination in the
-          workplace, politics, and social settings, resulting in unequal
-          opportunities and reduced access to resources.
-        </p>
-        <p>
-          Violence against women is a significant barrier to women empowerment
-          and development. Women experience various forms of violence, including
-          domestic violence, sexual harassment, and rape, which have long-term
-          physical and psychological effects.
-        </p>
-        <p>
-          Women empowerment and the promotion of gender equality are essential
-          for the development of a just and equitable society. Empowering women
-          leads to improved health outcomes, increased economic growth, and
-          poverty reduction. However, women continue to face numerous challenges
-          that hinder their ability to contribute fully to society. Addressing
-          these challenges requires a concerte effort from individuals,
-          communities, and governments. Only by working together, we can create
-          a more just and equitable society for everyone.
-        </p>
-      </div>
-    </section>
-
-    <div class="container header-section flex">
-      <div class="header-left">
-        <h1 class="header-left-h1">
-          Women <span style="color: #ff003a">Development</span>
-        </h1>
-        <p class="header-left-p text-center">
-          Women are the backbone of families and the society. They provide care,
-          support, and nurture their families and are essential for the mental
-          emotional as well as physical development of children. Women also play
-          a significant role in community building and often take on leadership
-          roles in community organizations.
-        </p>
-      </div>
-      <div class="header-right">
-        <img
-          src="image/women-strong.jpg"
-          alt=""
-          style="
-            border-radius: 50px;
-            box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
-            margin-block: 10px;
-          "
-        />
+      <div class="footer-content-col-2">
+        <h3>GET INVOLVED</h3>
+        <ul>
+          <li><a href="volunteer">As a Volunteer</a></li>
+          <li><a href="donation#member">Membership</a></li>
+          <li><a href="donation">Donate</a></li>
+          <hr />
+          <li><a href="privacy-policy">Privacy & Policy</a></li>
+          <li><a href="term-and-conditions">Term & Conditions</a></li>
+          <li><a href="refund-policy">Cancellation & Refund Policy</a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="container header-section flex section-reverse">
-      <div class="header-left">
-        <h1 class="header-left-h1">
-          <span style="color: #ff003a">Aatm Nirbhar</span> Women
-        </h1>
-        <p class="header-left-p text-center">
-          Violence against women is a significant barrier to women empowerment
-          and development. Women experience various forms of violence, including
-          domestic violence, sexual harassment, and rape, which have long-term
-          physical and psychological effects.
-        </p>
-      </div>
-      <div class="header-right">
-        <img
-          src="image/women-aathm-nirbhar.jpg"
-          alt=""
-          style="
-            border-radius: 50px;
-            box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
-            margin-block: 10px;
-          "
-        />
-      </div>
-    </div>
-
-    <div class="container header-section flex">
-      <div class="header-left">
-        <h1 class="header-left-h1">
-          Women <span style="color: #ff003a; font-weight: bold">रोजगार</span>
-        </h1>
-        <p class="header-left-p text-center">
-          Women empowerment and the promotion of gender equality are essential
-          for the development of a just and equitable society. Empowering women
-          leads to improved health outcomes, increased economic growth, and
-          poverty reduction. However, women continue to face numerous challenges
-          that hinder their ability to contribute fully to society. Addressing
-          these challenges requires a concerte effort from individuals,
-          communities, and governments. Only by working together, we can create
-          a more just and equitable society for everyone.
-        </p>
-      </div>
-      <div class="header-right">
-        <img
-          src="image/women-rojgar.jpg"
-          alt=""
-          style="
-            border-radius: 50px;
-            box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.264);
-            margin-block: 10px;
-          "
-        />
-      </div>
-    </div>
-
-    <!-- footer section -->
-
-    <footer class="footer-section">
-      <div
-        class="container flex footer-content"
-        style="align-items: flex-start"
-      >
-        <div class="footer-content-col-1">
-          <h3>CONTACT INFO</h3>
-
-          <p>
-            <i class="fa-solid fa-house"></i> &nbsp;&nbsp; KAMAKSHI MAHILA SEVA
-            SANSTHAN <br /><br />
-            FLAT NO. 302, AAKASH GANGA COMPLEX, SAVINA, 100 FEET LINK ROAD,
-            313001, UDAIPUR, RAJASTHAN.
-          </p>
-          <p>
-            <i class="fa-solid fa-phone"> </i>&nbsp;&nbsp;
-            <a href="tel:8619311686">+91 8619311686</a> ,
-            <a href="tel:9660796049">+91 9660796049</a>
-            <a href="tel:8619621343">+91 8619621343</a>
-          </p>
-          <p>
-            <i class="fa-solid fa-message"></i> &nbsp;&nbsp;<a
-              href="mailto:kamakshisevasansthan08@gmail.com"
-              >kamakshisevasansthan08@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="footer-content-col-2">
-          <h3>QUICK LINKS</h3>
-          <ul>
-            <li><a href="..">Home</a></li>
-            <li><a href="ashram">Anath Ashram (Opening Shortly)</a></li>
-            <li><a href="about">About us</a></li>
-            <li><a href="contact">Contact us</a></li>
-            <li><a href="gallery">Gallery</a></li>
-            <li><a href="contact">Feedback</a></li>
-          </ul>
-        </div>
-        <div class="footer-content-col-2">
-          <h3>GET INVOLVED</h3>
-          <ul>
-            <li><a href="volunteer">As a Volunteer</a></li>
-            <li><a href="donation#member">Membership</a></li>
-            <li><a href="donation">Donate</a></li>
-            <hr />
-            <li><a href="privacy-policy">Privacy & Policy</a></li>
-            <li><a href="term-and-conditions">Term & Conditions</a></li>
-            <li><a href="refund-policy">Cancellation & Refund Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <div
-      class="sub-footer"
-      style="
+  </footer>
+  <div class="sub-footer" style="
         background-color: black;
         padding: 20px;
         text-align: center;
         color: white;
-      "
-    >
-      Copyright © 2025 Kamakshi Mahila Seva - All rights reserved. || Design By
-      : <a href="https://iframeit.in/">iFrameit</a>
-    </div>
+      ">
+    Copyright © 2025 Kamakshi Mahila Seva - All rights reserved. || Design By
+    : <a href="https://iframeit.in/">iFrameit</a>
+  </div>
 
-    <!-- Script -->
+  <!-- Script -->
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
