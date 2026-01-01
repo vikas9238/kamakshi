@@ -1348,6 +1348,116 @@ padding: 1rem 3rem 4rem 3rem;
     }
 }
 
+/* Product Tabs */
+.product-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: white;
+    border: 2px solid #ff003a;
+    color: #ff003a;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: #ff003a;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.no-products {
+    text-align: center;
+    padding: 80px 20px;
+    color: #6c757d;
+    grid-column: 1 / -1;
+}
+
+.no-products i {
+    font-size: 4rem;
+    color: #ff003a;
+    margin-bottom: 20px;
+}
+
+.no-products h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #183b56;
+}
+
+.no-products p {
+    font-size: 1.1rem;
+}
+
+/* Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: #ff003a;
+}
+
+.product-image {
+    cursor: pointer;
+}
+
+.product-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
 
 .gaushala-process {
     padding: 60px 0;
